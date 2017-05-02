@@ -35,4 +35,9 @@ class MoneyTests: XCTestCase {
         XCTAssertNotEqual(five, ten)
     }
     
+    func testThatObjectWithEqualHashAreEqual() {
+        XCTAssertEqual(five.hashValue, otherFive.hashValue)
+        XCTAssertNotEqual(ten.hashValue, otherFive.hashValue)
+    }
+    
 }
