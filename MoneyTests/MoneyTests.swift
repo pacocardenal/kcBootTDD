@@ -3,17 +3,17 @@ import XCTest
 
 class MoneyTests: XCTestCase {
     
-    var five: Money!
-    var otherFive: Money!
-    var ten: Money!
+    var five: Bill!
+    var otherFive: Bill!
+    var ten: Bill!
     var broker: Broker!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        five = Money(amount: 5)
-        otherFive = Money(amount: 5)
-        ten = Money(amount: 10)
+        five = Bill(amount: 5)
+        otherFive = Bill(amount: 5)
+        ten = Bill(amount: 10)
         broker = Broker()
         broker.addRate(from: "€", to: "€", rate: 1)
     }
@@ -24,7 +24,7 @@ class MoneyTests: XCTestCase {
     }
     
     func testCreation() {
-        XCTAssertNotNil(Money())
+        XCTAssertNotNil(Bill())
     }
     
     func testSimpleMultiplication() {
