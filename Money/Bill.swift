@@ -32,7 +32,7 @@ struct Bill: Money {
         return Bill(amount: (self.amount + addedMoney.amount), badge: self.badge)
     }
     
-    func reduced(to: Currency, broker: Broker) throws -> Bill {
+    func reduced(to: Currency, broker: Rater) throws -> Bill {
         do {
             let changeRate = try broker.rate(from: self.badge, to: to)
             return Bill(amount: self.amount * changeRate, badge: to)
@@ -53,7 +53,7 @@ extension Bill: Equatable {
 extension Bill: Hashable {
     public var hashValue: Int {
         get {
-            return self.amount.hashValue + self.badge.hashValue
+            return self.amount.hashValue
         }
     }
 }

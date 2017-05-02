@@ -21,6 +21,7 @@
 		E3C94AC81EB8DB9600C51A1C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC61EB8DB9600C51A1C /* Money.swift */; };
 		E3C94ACA1EB8DBCA00C51A1C /* Wad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC91EB8DBCA00C51A1C /* Wad.swift */; };
 		E3C94ACB1EB8DBCA00C51A1C /* Wad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC91EB8DBCA00C51A1C /* Wad.swift */; };
+		E3C94ACE1EB8E2D000C51A1C /* WadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94ACD1EB8E2D000C51A1C /* WadTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E3C94AC31EB8A77C00C51A1C /* Broker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Broker.swift; sourceTree = "<group>"; };
 		E3C94AC61EB8DB9600C51A1C /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		E3C94AC91EB8DBCA00C51A1C /* Wad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wad.swift; sourceTree = "<group>"; };
+		E3C94ACD1EB8E2D000C51A1C /* WadTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WadTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E3C94AB51EB8946D00C51A1C /* BillTests.swift */,
+				E3C94ACD1EB8E2D000C51A1C /* WadTests.swift */,
 				E3C94AB71EB8946D00C51A1C /* Info.plist */,
 			);
 			path = MoneyTests;
@@ -112,9 +115,9 @@
 		E3C94ACC1EB8E26C00C51A1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E3C94AC01EB8957600C51A1C /* Bill.swift */,
 				E3C94AC31EB8A77C00C51A1C /* Broker.swift */,
 				E3C94AC61EB8DB9600C51A1C /* Money.swift */,
+				E3C94AC01EB8957600C51A1C /* Bill.swift */,
 				E3C94AC91EB8DBCA00C51A1C /* Wad.swift */,
 			);
 			name = Model;
@@ -242,6 +245,7 @@
 				E3C94AC51EB8A77C00C51A1C /* Broker.swift in Sources */,
 				E3C94AC81EB8DB9600C51A1C /* Money.swift in Sources */,
 				E3C94ACB1EB8DBCA00C51A1C /* Wad.swift in Sources */,
+				E3C94ACE1EB8E2D000C51A1C /* WadTests.swift in Sources */,
 				E3C94AB61EB8946D00C51A1C /* BillTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
