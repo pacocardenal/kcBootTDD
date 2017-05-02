@@ -1,8 +1,12 @@
 import Foundation
 
+public typealias Currency = String
+
+enum MoneyErrors: Error {
+    case reducedError
+}
+
 struct Money {
-    
-    typealias Currency = String
     
     let amount: Decimal
     let badge: Currency
@@ -26,6 +30,16 @@ struct Money {
     
     func plus(_ addedMoney: Money) -> Money {
         return Money(amount: (self.amount + addedMoney.amount), badge: self.badge)
+    }
+    
+    func reduced(to: Currency, broker: Broker) throws -> Money {
+        do {
+            let changeRate = try broker.rate(from: self.badge, to: to)
+            return Money(amount: self.amount * changeRate, badge: to)
+        } catch {
+            print("error in reduced \(error)")
+            throw MoneyErrors.reducedError
+        }
     }
     
 }

@@ -15,6 +15,8 @@
 		E3C94AB61EB8946D00C51A1C /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AB51EB8946D00C51A1C /* MoneyTests.swift */; };
 		E3C94AC11EB8957600C51A1C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC01EB8957600C51A1C /* Money.swift */; };
 		E3C94AC21EB8957600C51A1C /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC01EB8957600C51A1C /* Money.swift */; };
+		E3C94AC41EB8A77C00C51A1C /* Broker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC31EB8A77C00C51A1C /* Broker.swift */; };
+		E3C94AC51EB8A77C00C51A1C /* Broker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C94AC31EB8A77C00C51A1C /* Broker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		E3C94AB51EB8946D00C51A1C /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		E3C94AB71EB8946D00C51A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C94AC01EB8957600C51A1C /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		E3C94AC31EB8A77C00C51A1C /* Broker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Broker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				E3C94AA91EB8946D00C51A1C /* LaunchScreen.storyboard */,
 				E3C94AAC1EB8946D00C51A1C /* Info.plist */,
 				E3C94AC01EB8957600C51A1C /* Money.swift */,
+				E3C94AC31EB8A77C00C51A1C /* Broker.swift */,
 			);
 			path = Money;
 			sourceTree = "<group>";
@@ -205,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C94AC41EB8A77C00C51A1C /* Broker.swift in Sources */,
 				E3C94AA31EB8946D00C51A1C /* ViewController.swift in Sources */,
 				E3C94AA11EB8946D00C51A1C /* AppDelegate.swift in Sources */,
 				E3C94AC11EB8957600C51A1C /* Money.swift in Sources */,
@@ -216,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3C94AC21EB8957600C51A1C /* Money.swift in Sources */,
+				E3C94AC51EB8A77C00C51A1C /* Broker.swift in Sources */,
 				E3C94AB61EB8946D00C51A1C /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
