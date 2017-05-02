@@ -1,7 +1,7 @@
 import XCTest
 @testable import Money
 
-class MoneyTests: XCTestCase {
+class BillTests: XCTestCase {
     
     var five: Bill!
     var otherFive: Bill!
