@@ -3,16 +3,16 @@ import XCTest
 
 class MoneyTests: XCTestCase {
     
-    var five: Euro!
-    var otherFive: Euro!
-    var ten: Euro!
+    var five: Money!
+    var otherFive: Money!
+    var ten: Money!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        five = Euro(amount: 5)
-        otherFive = Euro(amount: 5)
-        ten = Euro(amount: 10)
+        five = Money(amount: 5)
+        otherFive = Money(amount: 5)
+        ten = Money(amount: 10)
     }
     
     override func tearDown() {
@@ -21,7 +21,7 @@ class MoneyTests: XCTestCase {
     }
     
     func testCreation() {
-        XCTAssertNotNil(Euro())
+        XCTAssertNotNil(Money())
     }
     
     func testSimpleMultiplication() {
@@ -38,6 +38,11 @@ class MoneyTests: XCTestCase {
     func testThatObjectWithEqualHashAreEqual() {
         XCTAssertEqual(five.hashValue, otherFive.hashValue)
         XCTAssertNotEqual(ten.hashValue, otherFive.hashValue)
+    }
+    
+    func testSimpleAddition() {
+        XCTAssertEqual(ten, five.plus(otherFive))
+        XCTAssertNotEqual(five, five.plus(otherFive))
     }
     
 }
