@@ -17,13 +17,9 @@ extension Wad : Money{
     }
     
     func times(_ numberTimes: Decimal) -> Wad {
-        var totalWad = Wad(amount: (self.bills.first?.amount)!)
-        
-        for bill in self.bills {
-            totalWad = totalWad.plus(Wad(bills: [bill]))
-        }
-        
-        return totalWad
+        return Wad(bills: self.bills.map{
+            $0.times(numberTimes)
+        })
     }
     
     func plus(_ addedMoney: Wad) -> Wad {
