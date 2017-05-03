@@ -30,10 +30,9 @@ class WadTests: XCTestCase {
         XCTAssertNotNil(Wad())
     }
     
-//    func testSimpleMultiplication() {
-//        let ten = five.times(2)
-//        XCTAssertEqual(ten.amount, 10)
-//    }
+    func testSimpleAddition() {
+        XCTAssertEqual(singleBillWad.plus(Wad(amount: 8)), Wad(amount: 50))
+    }
     
     func testEquality() {
         XCTAssertEqual(emptyWad, emptyWad)
@@ -59,11 +58,11 @@ class WadTests: XCTestCase {
 //        XCTAssertNotEqual(ten.hashValue, otherFive.hashValue)
 //    }
 //    
-//    func testSimpleAddition() {
-//        XCTAssertEqual(ten, five.plus(otherFive))
-//        XCTAssertNotEqual(five, five.plus(otherFive))
-//    }
-//    
+    func testSimpleMultiplication() {
+        let eightyFour = singleBillWad.times(2)
+        XCTAssertEqual(eightyFour, Wad(amount: 84))
+    }
+//
 //    func testSimpleReduction() {
 //        XCTAssertEqual(try! five.reduced(to: "€", broker: broker), five)
 //        XCTAssertNotEqual(try! five.reduced(to: "€", broker: broker), ten)
